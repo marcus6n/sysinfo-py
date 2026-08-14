@@ -23,7 +23,8 @@ env/
 
 # Generated reports
 *.json
-!docs/sample-report.json
+!examples/*.json
+!docs/examples/*.json
 
 # Archives
 *.zip
