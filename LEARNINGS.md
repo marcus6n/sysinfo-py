@@ -13,6 +13,7 @@ I built a Python CLI tool that collects and displays real system information usi
 - It is important to activate the virtual environment before running tests and commands.
 - On Linux environments, python3 may exist while python may not be available globally.
 - A clear repository structure and concise documentation make the project easier to explain and share.
+- During testing, disk usage went above 90%, which reinforced why basic system monitoring is important in security operations.
 
 ## Problems I faced
 
