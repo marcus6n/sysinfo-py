@@ -1,5 +1,7 @@
 # System Info Report (Python)
 
+Python CLI tool for collecting basic Linux system information and exporting it as JSON.
+
 ## What it is
 
 A Python CLI tool that displays basic system information from an Ubuntu Server VM running inside a VirtualBox homelab.
@@ -29,9 +31,11 @@ sysinfo-py/
 ├── docs/
 │   ├── environment.md
 │   └── screenshots/
+├── examples/
+│   └── report.example.json
 ├── src/
-│   ├── report.json
 │   └── sysinfo.py
+├── .gitignore
 ├── LEARNINGS.md
 ├── README.md
 └── requirements.txt
@@ -76,6 +80,9 @@ Export custom JSON report:
 python src/sysinfo.py --export json --output test.json
 ```
 
+By default, JSON output is generated as `report.json` in the current working directory.
+Generated JSON files are ignored by Git. A tracked sample is available at `examples/report.example.json`.
+
 ## Output example
 
 ```text
@@ -98,7 +105,7 @@ Logged-in users: No users detected
 
 ## Environment
 
-Full lab setup details are documented in docs/environment.md.
+Full lab setup details are documented in [docs/environment.md](docs/environment.md).
 
 ## Screenshots
 
